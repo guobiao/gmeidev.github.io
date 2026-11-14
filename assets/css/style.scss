@@ -825,6 +825,276 @@ a:hover {
   margin: 0;
 }
 
+/* Subpage Structured Components */
+
+.hero-card-padded {
+  padding-bottom: 30px;
+}
+
+.hero-card-padded .contact-actions:last-child,
+.hero-card-padded .hero-subtitle-row:last-child {
+  margin-bottom: 0;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.hero-eyebrow-radio {
+  background-color: var(--radio-soft);
+  border-color: rgba(5, 150, 105, 0.25);
+  color: var(--radio-accent);
+}
+
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.hero-split-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-split .contact-actions {
+  margin-bottom: 0;
+}
+
+.hero-intro {
+  margin: 14px 0 0;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.n1ui-logo-frame {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.n1ui-logo-frame img {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
+
+.quote-callout {
+  margin: 14px 0 22px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  color: var(--text-secondary);
+  font-size: 0.96875rem;
+  line-height: 1.6;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 22px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.list-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.list-card-title {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.styled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.styled-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.styled-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.styled-list-yes li::before {
+  background-color: var(--radio-accent);
+}
+
+.styled-list-no li::before {
+  background-color: var(--warm-accent);
+}
+
+.signoff-card {
+  padding: 24px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signoff-quote {
+  margin: 0;
+  font-size: 1.03125rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.signoff-signature {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+.emoji-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.hero-title-paper {
+  margin: 0 0 10px;
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.hero-authors {
+  margin: 0 0 22px;
+  font-size: 0.96875rem;
+  color: var(--text-secondary);
+}
+
+.paper-card {
+  padding: 24px 28px;
+}
+
+.paper-card p {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.paper-card p:last-child {
+  margin-bottom: 0;
+}
+
+.bibtex-box {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--surface-subtle);
+}
+
+.bibtex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.copy-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent-border);
+  background-color: var(--accent-soft);
+}
+
+.copy-btn.is-copied {
+  color: var(--radio-accent);
+  border-color: var(--radio-accent);
+}
+
+.bibtex-box pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.84375rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
 /* Subpages (.prose) */
 
 .prose {
@@ -976,6 +1246,12 @@ a:hover {
   .education-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-split {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -999,6 +1275,10 @@ a:hover {
     padding: 24px 20px 0;
   }
 
+  .hero-card-padded {
+    padding-bottom: 22px;
+  }
+
   .on-air-bar {
     margin: 0 -20px;
     padding: 14px 20px;
@@ -1019,8 +1299,14 @@ a:hover {
   }
 
   .edu-card,
-  .pub-card {
+  .pub-card,
+  .list-card {
     padding: 18px 20px;
+  }
+
+  .paper-card,
+  .signoff-card {
+    padding: 20px;
   }
 
   .family-banner {
@@ -1067,7 +1353,8 @@ a:hover {
     padding: 0;
   }
 
-  .site-header {
+  .site-header,
+  .copy-btn {
     display: none;
   }
 
@@ -1076,6 +1363,9 @@ a:hover {
   .experience-card,
   .edu-card,
   .pub-card,
+  .list-card,
+  .paper-card,
+  .signoff-card,
   .family-banner,
   .surface-card {
     box-shadow: none;
