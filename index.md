@@ -6,15 +6,15 @@ Senior Staff Software Engineer at Google
 
 ## Contact
 * Email: [contact@gmei.dev](mailto:contact@gmei.dev)
-* Website: [gmei.dev](http://gmei.dev/)
+* Website: [gmei.dev](https://gmei.dev/)
 * [LinkedIn](https://www.linkedin.com/in/guobiao/)
 * On air: FCC Call Sign [N1UI](/n1ui)
   * I am an amateur radio operator, and my QTH is in [Newton, Massachusetts](https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh).
   * You can sometimes find me on [HF radio waves](https://en.wikipedia.org/wiki/High_frequency), usually via [SSB mode](https://en.wikipedia.org/wiki/Single-sideband_modulation).
 
 ## Summary
-* Machine learning research background (PhD degree in machine learning).
-* Hands on software engineering experience in various products and systems.
+* Machine learning research background (Ph.D. degree in machine learning).
+* Hands-on software engineering experience in various products and systems.
 * Years of experience in technical leadership and people management of engineering teams.
 
 ## Experience
@@ -60,7 +60,7 @@ Graduated from Chu Kochen Honors College.
 
 ## Publications
 
-| Author(s) | Year | Title | Publisher | Bibtex / Abstract | Download |
+| Author(s) | Year | Title | Publisher | BibTeX / Abstract | Download |
 | --- | --- | --- | --- | --- | --- |
 | Guobiao Mei | 2008 | **Dimensionality Reduction Algorithms With Applications to Collaborative Data and Images** | _Doctoral dissertation_, University of California at Riverside | [bib/abs](/assets/papers/Mei08) | [![PDF](/assets/images/pdf.gif)](/assets/papers/dissertation.pdf) |
 | Guobiao Mei and Christian R. Shelton | 2008 | **Unsupervised Image Embedding Using Nonparametric Statistics** | _Proceedings of the Nineteenth International Conference on Pattern Recognition_ (doi: 10.1109/ICPR.2008.4761051) | [bib/abs](/assets/papers/MeiShe08) | [![PDF](/assets/images/pdf.gif)](/assets/papers/icpr08.pdf) |

@@ -6,7 +6,7 @@ I’m 7 ½ years old. I’m in 2nd grade.
 
 I like to eat pasta. 
 
-I like to draw and watch videos on the ipad. I’m very good at acting cute. 🥺🥺🥺
+I like to draw and watch videos on the iPad. I’m very good at acting cute. 🥺🥺🥺
 
 I like to play with pattern blocks in school. 
 
