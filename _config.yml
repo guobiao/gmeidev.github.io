@@ -4,8 +4,8 @@ description: Computer Scientist, Software Engineer and Manager
 google_analytics: G-2R4HQKYW40
 email: contact@gmei.dev
 linkedin_username: guobiao
-theme: jekyll-theme-hacker
-show_downloads: false
+plugins:
+  - jekyll-seo-tag
 exclude:
   - CNAME
   - README.md

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <script>
+      (function () {
+        var theme = null;
+        try {
+          theme = localStorage.getItem('theme');
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom-google-analytics.html %}
+    {% seo %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        {% if page.is_home %}
+        <a class="site-brand" href="{{ '/' | relative_url }}">gmei.dev</a>
+        {% else %}
+        <a class="back-link" href="{{ '/' | relative_url }}">&larr; Guobiao Mei</a>
+        {% endif %}
+        <div class="header-actions">
+          {% if page.is_home %}
+          <nav class="site-nav" aria-label="Page sections">
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+          </nav>
+          {% endif %}
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    {% if page.is_home %}
+    <main class="container home-main">
+      {{ content }}
+    </main>
+    {% else %}
+    <main class="container subpage-main">
+      <article class="prose surface-card">
+        {{ content }}
+      </article>
+    </main>
+    {% endif %}
+    <script>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        function updateButtonLabel(theme) {
+          var next = theme === 'dark' ? 'light' : 'dark';
+          btn.setAttribute('aria-label', 'Switch to ' + next + ' mode');
+          btn.setAttribute('title', 'Switch to ' + next + ' mode');
+          btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+        }
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        updateButtonLabel(current);
+        btn.addEventListener('click', function () {
+          var active = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+          var next = active === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          updateButtonLabel(next);
+          try {
+            localStorage.setItem('theme', next);
+          } catch (e) {}
+        });
+        if (window.matchMedia) {
+          var mq = window.matchMedia('(prefers-color-scheme: dark)');
+          var onSystemChange = function (e) {
+            var stored = null;
+            try {
+              stored = localStorage.getItem('theme');
+            } catch (err) {}
+            if (stored !== 'light' && stored !== 'dark') {
+              var next = e.matches ? 'dark' : 'light';
+              document.documentElement.setAttribute('data-theme', next);
+              updateButtonLabel(next);
+            }
+          };
+          if (mq.addEventListener) {
+            mq.addEventListener('change', onSystemChange);
+          } else if (mq.addListener) {
+            mq.addListener(onSystemChange);
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
