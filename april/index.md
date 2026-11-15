@@ -27,12 +27,12 @@ nav:
     </span>
   </div>
   <div class="contact-actions">
-    <a class="action-pill action-pill-primary" href="mailto:apinomei@gmail.com">
+    <a class="action-pill action-pill-primary" href="mailto:april@gmei.dev">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect width="20" height="16" x="2" y="4" rx="2"/>
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
       </svg>
-      apinomei@gmail.com
+      april@gmei.dev
     </a>
     <a class="action-pill" href="https://www.linkedin.com/in/april-mei-833864370/">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
