@@ -23,25 +23,24 @@ nav:
         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
         <circle cx="12" cy="10" r="3"/>
       </svg>
-      Natick, Massachusetts
+      Greater Boston Area
     </span>
   </div>
   <div class="contact-actions">
-    <a class="action-pill action-pill-primary" href="https://www.linkedin.com/in/jing-xu-515a7123/">
+    <a class="action-pill action-pill-primary" href="mailto:maydordor@gmei.dev">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      maydordor@gmei.dev
+    </a>
+    <a class="action-pill" href="https://www.linkedin.com/in/jing-xu-515a7123/">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
         <rect width="4" height="12" x="2" y="9"/>
         <circle cx="4" cy="4" r="2"/>
       </svg>
       LinkedIn · in/jing-xu-515a7123
-    </a>
-    <a class="action-pill" href="https://www.cs.ucr.edu/~jingxu/">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
-        <path d="M2 12h20"/>
-      </svg>
-      UCR · cs.ucr.edu/~jingxu
     </a>
   </div>
 </section>
