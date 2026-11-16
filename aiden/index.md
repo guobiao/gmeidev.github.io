@@ -43,5 +43,5 @@ structured: true
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </span>
-  <p>I have a sister named April. Do you want to go to <a href="/april">her page</a>? You can also go back to <a href="/">my dad’s</a>.</p>
+  <p>I have a sister named April. Do you want to go to <a href="/april">her page</a>? You can also visit <a href="/jingxu">my mom’s</a> or go back to <a href="/">my dad’s</a>.</p>
 </footer>

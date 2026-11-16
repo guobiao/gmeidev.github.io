@@ -272,5 +272,5 @@ is_home: true
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </span>
-  <p>Check out my daughter <a href="/april">April's homepage</a> or my son <a href="/aiden">Aiden's</a>.</p>
+  <p>Check out my wife <a href="/jingxu">Jing's homepage</a>, my daughter <a href="/april">April's</a>, or my son <a href="/aiden">Aiden's</a>.</p>
 </footer>

@@ -222,5 +222,5 @@ nav:
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </span>
-  <p>Visit my brother <a href="/aiden">Aiden's homepage</a>, or go back to <a href="/">Guobiao's homepage</a>.</p>
+  <p>Visit my mom <a href="/jingxu">Jing's homepage</a>, my brother <a href="/aiden">Aiden's</a>, or my dad <a href="/">Guobiao's</a>.</p>
 </footer>
