@@ -1,6 +1,7 @@
 ---
 layout: default
 title: N1UI On Air
+description: Amateur radio station N1UI — Guobiao Mei in Newton, Massachusetts (Grid FN42jh).
 structured: true
 ---
 
@@ -66,7 +67,7 @@ structured: true
           <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/>
         </svg>
       </div>
-      <p class="highlight-text">Guobiao Mei is an amateur radio operator in Newton, Massachusetts. His FCC-issued call sign is <strong>N1UI</strong>.</p>
+      <p class="highlight-text"><strong>N1UI</strong> is the personal amateur radio station of Guobiao Mei, licensed by the FCC and operating from Newton, Massachusetts, primarily on <a href="https://en.wikipedia.org/wiki/High_frequency">HF</a> (<a href="https://en.wikipedia.org/wiki/Single-sideband_modulation">SSB</a>).</p>
     </div>
     <div class="highlight-card">
       <div class="highlight-icon" aria-hidden="true">
@@ -75,7 +76,7 @@ structured: true
           <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
         </svg>
       </div>
-      <p class="highlight-text">His station's grid location is <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">FN42jh</a>. Here is the <a href="https://www.qrz.com/db/n1ui">QRZ</a> profile page.</p>
+      <p class="highlight-text">Located in Maidenhead grid square <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">FN42jh</a>. Station details and logs are available on <a href="https://www.qrz.com/db/n1ui">QRZ</a>.</p>
     </div>
     <div class="highlight-card">
       <div class="highlight-icon" aria-hidden="true">
@@ -84,7 +85,7 @@ structured: true
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
         </svg>
       </div>
-      <p class="highlight-text">He can be reached on air (call sign <strong>N1UI</strong>), or via email <a href="mailto:n1ui@gmei.dev">n1ui@gmei.dev</a>.</p>
+      <p class="highlight-text">Reachable on the air as <strong>N1UI</strong> or by email at <a href="mailto:n1ui@gmei.dev">n1ui@gmei.dev</a>.</p>
     </div>
   </div>
 </section>
@@ -96,5 +97,5 @@ structured: true
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </span>
-  <p>Back to <a href="/">Guobiao's homepage</a>?</p>
+  <p>Return to <a href="/">Guobiao's homepage</a>.</p>
 </footer>

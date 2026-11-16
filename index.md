@@ -43,8 +43,8 @@ is_home: true
     </a>
   </div>
   <div class="on-air-bar">
-    <span class="on-air-badge"><span class="on-air-dot" aria-hidden="true"></span>On air</span>
-    <p class="on-air-text">FCC Call Sign <a href="/n1ui">N1UI</a> — amateur radio operator in <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">Newton, Massachusetts</a>, active on <a href="https://en.wikipedia.org/wiki/High_frequency">HF</a> (<a href="https://en.wikipedia.org/wiki/Single-sideband_modulation">SSB</a>)</p>
+    <span class="on-air-badge"><span class="on-air-dot" aria-hidden="true"></span>On Air</span>
+    <p class="on-air-text">Amateur radio operator in <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">Newton, Massachusetts</a> — FCC call sign <a href="/n1ui">N1UI</a>, active on <a href="https://en.wikipedia.org/wiki/High_frequency">HF</a> (<a href="https://en.wikipedia.org/wiki/Single-sideband_modulation">SSB</a>)</p>
   </div>
 </section>
 
@@ -65,7 +65,7 @@ is_home: true
           <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
         </svg>
       </div>
-      <p class="highlight-text">Machine learning research background (Ph.D. degree in machine learning).</p>
+      <p class="highlight-text">Ph.D. in Computer Science with a research foundation in machine learning and AI.</p>
     </div>
     <div class="highlight-card">
       <div class="highlight-icon" aria-hidden="true">
@@ -74,7 +74,7 @@ is_home: true
           <polyline points="8 6 2 12 8 18"/>
         </svg>
       </div>
-      <p class="highlight-text">Hands-on software engineering experience in various products and systems.</p>
+      <p class="highlight-text">Hands-on experience building large-scale backend systems and data infrastructure across Search, Flights, and Ads.</p>
     </div>
     <div class="highlight-card">
       <div class="highlight-icon" aria-hidden="true">
@@ -85,7 +85,7 @@ is_home: true
           <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
         </svg>
       </div>
-      <p class="highlight-text">Years of experience in technical leadership and people management of engineering teams.</p>
+      <p class="highlight-text">Over a decade of technical leadership and engineering management across distributed teams.</p>
     </div>
   </div>
 </section>
@@ -104,7 +104,7 @@ is_home: true
           <span class="role-period">October 2023 – Present</span>
         </div>
         <p class="role-location">Cambridge, Massachusetts, United States</p>
-        <p class="role-desc">Technical Lead and Manager of multiple teams owning data pipelines and data products that turn Google's large-scale search user activity logs into ranking signals.</p>
+        <p class="role-desc">Lead and manage multiple teams owning data pipelines and data products that turn large-scale Google Search activity logs into ranking signals.</p>
       </article>
       <article class="timeline-item">
         <div class="role-header">
@@ -112,7 +112,7 @@ is_home: true
           <span class="role-period">October 2016 – October 2023</span>
         </div>
         <p class="role-location">Cambridge, Massachusetts, United States</p>
-        <p class="role-desc">Technical Lead and Manager of a distributed team (<em>Cambridge, MA</em> and <em>Los Angeles, CA</em>) building and operating data pipelines for Search ranking signal generation.</p>
+        <p class="role-desc">Led and managed a distributed team (Cambridge, MA and Los Angeles, CA) building and operating data pipelines for Search ranking signal generation.</p>
       </article>
       <article class="timeline-item">
         <div class="role-header">
@@ -120,8 +120,8 @@ is_home: true
           <span class="role-period">April 2011 – October 2016</span>
         </div>
         <p class="role-location">Cambridge, Massachusetts, United States</p>
+        <p class="role-desc">Led the Search Analysis team, developing libraries, tools, and infrastructure for analyzing Google Search user activity data.</p>
         <p class="role-desc">Developed backend systems on the Flight Search team powering <a href="https://www.google.com/flights">google.com/flights</a>.</p>
-        <p class="role-desc">Technical Lead of the Search Analysis team, developing libraries, tools, and infrastructure for analyzing Google users' search activity data.</p>
       </article>
       <article class="timeline-item">
         <div class="role-header">
@@ -129,7 +129,7 @@ is_home: true
           <span class="role-period">October 2008 – April 2011</span>
         </div>
         <p class="role-location">Los Angeles, California, United States</p>
-        <p class="role-desc">Software Engineer and later Technical Lead in the Ads organization, developing backend systems to help advertisers place ads on the most relevant Google Display Network inventory.</p>
+        <p class="role-desc">Developed backend systems—and later served as Technical Lead—in the Ads organization, helping advertisers place ads on the most relevant Google Display Network inventory.</p>
       </article>
       <article class="timeline-item">
         <div class="role-header">
@@ -137,7 +137,7 @@ is_home: true
           <span class="role-period">June 2007 – September 2007</span>
         </div>
         <p class="role-location">Mountain View, California, United States</p>
-        <p class="role-desc">Worked on the AdSpam team, designing and implementing a spam detector based on modeling user queries with hidden Markov models.</p>
+        <p class="role-desc">Designed and implemented an ad-spam detector on the AdSpam team by modeling user queries with hidden Markov models.</p>
       </article>
     </div>
   </div>
@@ -155,8 +155,8 @@ is_home: true
     <article class="edu-card">
       <span class="edu-period">September 1999 – June 2003</span>
       <h3 class="edu-school">Zhejiang University, Hangzhou, China</h3>
-      <p class="edu-degree">Bachelor's Degree, Computer Science</p>
-      <p class="edu-note">Graduated from Chu Kochen Honors College.</p>
+      <p class="edu-degree">Bachelor's degree, Computer Science</p>
+      <p class="edu-note">Graduated from the Chu Kochen Honors College.</p>
     </article>
   </div>
 </section>
@@ -166,7 +166,7 @@ is_home: true
   <div class="pub-list">
     <article class="pub-card">
       <div class="pub-header">
-        <h3 class="pub-title">Dimensionality Reduction Algorithms With Applications to Collaborative Data and Images</h3>
+        <h3 class="pub-title">Dimensionality Reduction Algorithms with Applications to Collaborative Data and Images</h3>
         <span class="pub-year">2008</span>
       </div>
       <p class="pub-meta">Guobiao Mei. <em>Doctoral dissertation</em>, University of California, Riverside, 2008.</p>
@@ -272,5 +272,5 @@ is_home: true
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </span>
-  <p>Check out my daughter <a href="/april">April's homepage</a>, or my son <a href="/aiden">Aiden's</a>.</p>
+  <p>Check out my daughter <a href="/april">April's homepage</a> or my son <a href="/aiden">Aiden's</a>.</p>
 </footer>
