@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Aiden Mei
+site_brand: aiden.gmei.dev
 structured: true
 ---
 

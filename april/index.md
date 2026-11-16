@@ -2,6 +2,7 @@
 layout: default
 title: April Mei
 description: Newton South HS ’28 · Non-Trivial ’25 · Math Prize for Girls ’26
+site_brand: april.gmei.dev
 structured: true
 nav:
   - label: Experience

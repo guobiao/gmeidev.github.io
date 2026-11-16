@@ -2,6 +2,7 @@
 layout: default
 title: Jing Xu
 description: Principal Software Engineer at The MathWorks
+site_brand: jingxu.gmei.dev
 structured: true
 nav:
   - label: Experience

@@ -30,6 +30,8 @@
       <div class="container header-inner">
         {% if page.is_home %}
         <a class="site-brand" href="{{ '/' | relative_url }}">gmei.dev</a>
+        {% elsif page.site_brand %}
+        <a class="site-brand" href="https://{{ page.site_brand }}">{{ page.site_brand }}</a>
         {% else %}
         <a class="back-link" href="{{ '/' | relative_url }}">&larr; Guobiao Mei</a>
         {% endif %}
