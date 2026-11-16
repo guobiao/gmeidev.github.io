@@ -25,6 +25,17 @@
   --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --logo-grad-1: #2563eb;
+  --logo-grad-2: #0891b2;
+  --logo-grad-3: #059669;
+  --logo-onair: #0f172a;
+  --logo-beacon: #ef4444;
+  --logo-beacon-halo: rgba(239, 68, 68, 0.20);
+  --logo-glow-1: #10b981;
+  --logo-glow-1-alpha: 0.09;
+  --logo-glow-2: #2563eb;
+  --logo-glow-2-alpha: 0.03;
+  --logo-call-filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.12));
 }
 
 [data-theme="dark"] {
@@ -48,6 +59,17 @@
   --warm-accent: #fbbf24;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.40), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --logo-grad-1: #60a5fa;
+  --logo-grad-2: #22d3ee;
+  --logo-grad-3: #34d399;
+  --logo-onair: #f8fafc;
+  --logo-beacon: #fb7185;
+  --logo-beacon-halo: rgba(251, 113, 133, 0.28);
+  --logo-glow-1: #34d399;
+  --logo-glow-1-alpha: 0.16;
+  --logo-glow-2: #38bdf8;
+  --logo-glow-2-alpha: 0.07;
+  --logo-call-filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.24));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,6 +94,17 @@
     --warm-accent: #fbbf24;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
     --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.40), 0 2px 6px rgba(0, 0, 0, 0.25);
+    --logo-grad-1: #60a5fa;
+    --logo-grad-2: #22d3ee;
+    --logo-grad-3: #34d399;
+    --logo-onair: #f8fafc;
+    --logo-beacon: #fb7185;
+    --logo-beacon-halo: rgba(251, 113, 133, 0.28);
+    --logo-glow-1: #34d399;
+    --logo-glow-1-alpha: 0.16;
+    --logo-glow-2: #38bdf8;
+    --logo-glow-2-alpha: 0.07;
+    --logo-call-filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.24));
   }
 }
 
@@ -889,18 +922,78 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px 22px;
-  box-shadow: var(--shadow-sm);
+  background: transparent;
+  padding: 2px 0;
 }
 
-.n1ui-logo-frame img {
+.n1ui-logo-frame img,
+.n1ui-logo-frame .n1ui-logo {
   display: block;
-  width: 190px;
+  width: 224px;
   max-width: 100%;
   height: auto;
+  overflow: visible;
+}
+
+.n1ui-logo .n1ui-grad-1 {
+  stop-color: var(--logo-grad-1);
+  transition: stop-color 0.2s ease;
+}
+
+.n1ui-logo .n1ui-grad-2 {
+  stop-color: var(--logo-grad-2);
+  transition: stop-color 0.2s ease;
+}
+
+.n1ui-logo .n1ui-grad-3 {
+  stop-color: var(--logo-grad-3);
+  transition: stop-color 0.2s ease;
+}
+
+.n1ui-logo .n1ui-glow-stop-1 {
+  stop-color: var(--logo-glow-1);
+  stop-opacity: var(--logo-glow-1-alpha);
+}
+
+.n1ui-logo .n1ui-glow-stop-2 {
+  stop-color: var(--logo-glow-2);
+  stop-opacity: var(--logo-glow-2-alpha);
+}
+
+.n1ui-logo .n1ui-callsign {
+  filter: var(--logo-call-filter);
+}
+
+.n1ui-logo .n1ui-onair-text {
+  color: var(--logo-onair);
+  transition: color 0.2s ease;
+}
+
+.n1ui-logo .n1ui-onair-dot {
+  fill: var(--logo-onair);
+  transition: fill 0.2s ease;
+}
+
+.n1ui-logo .n1ui-beacon-core {
+  fill: var(--logo-beacon);
+  transition: fill 0.2s ease;
+}
+
+.n1ui-logo .n1ui-beacon-halo {
+  fill: var(--logo-beacon-halo);
+  transform-origin: 155.5px 133.5px;
+  animation: n1ui-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes n1ui-pulse {
+  0%, 100% {
+    opacity: 0.65;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.14);
+  }
 }
 
 .quote-callout {
@@ -1350,11 +1443,10 @@ a:hover {
 .prose img[src*="n1ui-logo"] {
   display: block;
   max-width: 240px;
-  background-color: #ffffff;
-  padding: 16px 24px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
   margin: 18px 0 22px;
 }
 
@@ -1384,6 +1476,10 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+
+  .n1ui-logo-frame {
+    align-self: center;
   }
 }
 
@@ -1469,6 +1565,10 @@ a:hover {
   *::after {
     transition: none !important;
   }
+
+  .n1ui-logo .n1ui-beacon-halo {
+    animation: none;
+  }
 }
 
 @media print {
@@ -1484,6 +1584,15 @@ a:hover {
     --accent: #1d4ed8;
     --shadow-sm: none;
     --shadow-md: none;
+    --logo-grad-1: #1d4ed8;
+    --logo-grad-2: #0e7490;
+    --logo-grad-3: #047857;
+    --logo-onair: #0f172a;
+    --logo-beacon: #dc2626;
+    --logo-beacon-halo: transparent;
+    --logo-glow-1-alpha: 0;
+    --logo-glow-2-alpha: 0;
+    --logo-call-filter: none;
   }
 
   body {

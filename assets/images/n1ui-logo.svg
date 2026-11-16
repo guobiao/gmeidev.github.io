@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="356" viewBox="0 0 280 178" role="img" aria-labelledby="n1ui-logo-title">
+  <title id="n1ui-logo-title">N1UI On Air</title>
+  <style>
+    :root {
+      --logo-grad-1: #2563eb;
+      --logo-grad-2: #0891b2;
+      --logo-grad-3: #059669;
+      --logo-onair: #0f172a;
+      --logo-beacon: #ef4444;
+      --logo-beacon-halo: rgba(239, 68, 68, 0.20);
+      --logo-glow-1: #10b981;
+      --logo-glow-1-alpha: 0.09;
+      --logo-glow-2: #2563eb;
+      --logo-glow-2-alpha: 0.03;
+      --logo-call-filter: drop-shadow(0 2px 6px rgba(37, 99, 235, 0.12));
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --logo-grad-1: #60a5fa;
+        --logo-grad-2: #22d3ee;
+        --logo-grad-3: #34d399;
+        --logo-onair: #f8fafc;
+        --logo-beacon: #fb7185;
+        --logo-beacon-halo: rgba(251, 113, 133, 0.28);
+        --logo-glow-1: #34d399;
+        --logo-glow-1-alpha: 0.16;
+        --logo-glow-2: #38bdf8;
+        --logo-glow-2-alpha: 0.07;
+        --logo-call-filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.24));
+      }
+    }
+
+    .n1ui-grad-1 { stop-color: var(--logo-grad-1); }
+    .n1ui-grad-2 { stop-color: var(--logo-grad-2); }
+    .n1ui-grad-3 { stop-color: var(--logo-grad-3); }
+    .n1ui-glow-stop-1 { stop-color: var(--logo-glow-1); stop-opacity: var(--logo-glow-1-alpha); }
+    .n1ui-glow-stop-2 { stop-color: var(--logo-glow-2); stop-opacity: var(--logo-glow-2-alpha); }
+    .n1ui-callsign { filter: var(--logo-call-filter); }
+    .n1ui-onair-text { color: var(--logo-onair); }
+    .n1ui-onair-dot { fill: var(--logo-onair); }
+    .n1ui-beacon-core { fill: var(--logo-beacon); }
+    .n1ui-beacon-halo { fill: var(--logo-beacon-halo); }
+  </style>
+  <defs>
+    <radialGradient id="n1ui-ambient" cx="50%" cy="50%" r="50%">
+      <stop class="n1ui-glow-stop-1" offset="0%" stop-color="#10b981" stop-opacity="0.09"/>
+      <stop class="n1ui-glow-stop-2" offset="58%" stop-color="#2563eb" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="n1ui-call-grad" x1="0%" y1="0%" x2="100%" y2="15%">
+      <stop class="n1ui-grad-1" offset="0%" stop-color="#2563eb"/>
+      <stop class="n1ui-grad-2" offset="52%" stop-color="#0891b2"/>
+      <stop class="n1ui-grad-3" offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="n1ui-arc-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop class="n1ui-grad-1" offset="0%" stop-color="#2563eb"/>
+      <stop class="n1ui-grad-2" offset="50%" stop-color="#0891b2"/>
+      <stop class="n1ui-grad-3" offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="n1ui-wave-grad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop class="n1ui-grad-1" offset="0%" stop-color="#2563eb" stop-opacity="0"/>
+      <stop class="n1ui-grad-1" offset="18%" stop-color="#2563eb" stop-opacity="0.85"/>
+      <stop class="n1ui-grad-2" offset="50%" stop-color="#0891b2"/>
+      <stop class="n1ui-grad-3" offset="82%" stop-color="#059669" stop-opacity="0.85"/>
+      <stop class="n1ui-grad-3" offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="140" cy="89" rx="134" ry="84" fill="url(#n1ui-ambient)"/>
+  <path d="M 92 17 Q 140 2 188 17" fill="none" stroke="url(#n1ui-arc-grad)" stroke-width="2.1" stroke-linecap="round" opacity="0.52"/>
+  <path d="M 66 28 Q 140 8 214 28" fill="none" stroke="url(#n1ui-arc-grad)" stroke-width="3.1" stroke-linecap="round"/>
+  <g class="n1ui-callsign" fill="url(#n1ui-call-grad)">
+    <path d="M 41 90 V 34 H 53.6 L 72 69.6 V 34 H 83 V 90 H 70.4 L 52 54.4 V 90 Z"/>
+    <path d="M 97 80 H 110.5 V 46 L 101.5 52.2 L 96.2 43.8 L 111.5 34 H 121.5 V 80 H 133 V 90 H 97 Z"/>
+    <path d="M 147 34 H 158 V 69 A 10 11 0 0 0 178 69 V 34 H 189 V 69 A 21 22 0 0 1 147 69 Z"/>
+    <path d="M 205 34 H 239 V 44 H 227.5 V 80 H 239 V 90 H 205 V 80 H 216.5 V 44 H 205 Z"/>
+  </g>
+  <path d="M 44 103.5 H 106 C 110 103.5, 110 105.5, 114 105.5 C 118 105.5, 118 99.5, 122 99.5 C 126.5 99.5, 126.5 108.5, 131 108.5 C 135.5 108.5, 135.5 95.5, 140 95.5 C 144.5 95.5, 144.5 108.5, 149 108.5 C 153.5 108.5, 153.5 99.5, 158 99.5 C 162 99.5, 162 105.5, 166 105.5 C 170 105.5, 170 103.5, 174 103.5 H 236" fill="none" stroke="url(#n1ui-wave-grad)" stroke-width="2.2" stroke-linecap="round"/>
+  <g class="n1ui-onair-text" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="77" y="117" width="17" height="24" rx="7.5"/>
+    <path d="M 106 141 V 128.5 A 7.5 7.5 0 0 1 121 128.5 V 141"/>
+    <path d="M 145 141 L 155.5 117 L 166 141"/>
+    <path d="M 179 123.5 V 141"/>
+    <path d="M 192 141 V 127 A 6 6 0 0 1 198 121 H 203.5"/>
+  </g>
+  <circle class="n1ui-onair-dot" cx="179" cy="116.5" r="2.7" fill="#0f172a"/>
+  <circle class="n1ui-beacon-halo" cx="155.5" cy="133.5" r="6.2" fill="rgba(239, 68, 68, 0.22)"/>
+  <circle class="n1ui-beacon-core" cx="155.5" cy="133.5" r="3.2" fill="#ef4444"/>
+  <path d="M 66 150 Q 140 170 214 150" fill="none" stroke="url(#n1ui-arc-grad)" stroke-width="3.1" stroke-linecap="round"/>
+  <path d="M 92 161 Q 140 176 188 161" fill="none" stroke="url(#n1ui-arc-grad)" stroke-width="2.1" stroke-linecap="round" opacity="0.52"/>
+</svg>
