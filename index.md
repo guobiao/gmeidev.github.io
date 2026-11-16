@@ -3,7 +3,7 @@ layout: default
 is_home: true
 ---
 
-<section class="hero-card" aria-label="Introduction and contact">
+<section class="hero-card hero-card-padded" aria-label="Introduction and contact">
   <h1 class="hero-title">Guobiao Mei</h1>
   <div class="hero-subtitle-row">
     <p class="hero-role">Senior Staff Software Engineer at Google</p>
@@ -41,10 +41,6 @@ is_home: true
       </svg>
       Call Sign N1UI
     </a>
-  </div>
-  <div class="on-air-bar">
-    <span class="on-air-badge"><span class="on-air-dot" aria-hidden="true"></span>On Air</span>
-    <p class="on-air-text">Amateur radio operator in <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">Newton, Massachusetts</a> — FCC call sign <a href="/n1ui">N1UI</a>, active on <a href="https://en.wikipedia.org/wiki/High_frequency">HF</a> (<a href="https://en.wikipedia.org/wiki/Single-sideband_modulation">SSB</a>)</p>
   </div>
 </section>
 
@@ -262,6 +258,16 @@ is_home: true
         </a>
       </div>
     </article>
+  </div>
+</section>
+
+<section id="hobbies" class="section-block" aria-labelledby="heading-hobbies">
+  <h2 id="heading-hobbies" class="section-heading">Hobbies</h2>
+  <div class="hobby-list">
+    <div class="hobby-card">
+      <span class="on-air-badge"><span class="on-air-dot" aria-hidden="true"></span>On Air</span>
+      <p class="hobby-text">Amateur radio operator in <a href="https://www.levinecentral.com/ham/grid_square.php?Grid=FN42jh">Newton, Massachusetts</a> — FCC call sign <a href="/n1ui">N1UI</a>, active on <a href="https://en.wikipedia.org/wiki/High_frequency">HF</a> (<a href="https://en.wikipedia.org/wiki/Single-sideband_modulation">SSB</a>)</p>
+    </div>
   </div>
 </section>
 
