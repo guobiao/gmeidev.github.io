@@ -101,7 +101,7 @@ nav:
           <span class="role-period">April 2011 – Present</span>
         </div>
         <p class="role-location">Natick, Massachusetts, United States</p>
-        <p class="role-desc">Architect and develop core components of the Simulink compile engine and simulation infrastructure on the Simulink Semantics team.</p>
+        <p class="role-desc">Architect and develop core components of the Simulink compile engine on the Simulink Semantics team.</p>
       </article>
     </div>
   </div>
